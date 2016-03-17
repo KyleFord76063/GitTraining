@@ -17,7 +17,7 @@
 * Switch to created folder:
   * ```cd d:\code\GitTraining1```
 * Initialize _GIT_ repository:
-  * ```git init ```
+  * ```git init```
 
 ## Comments
 
