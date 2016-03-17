@@ -26,3 +26,9 @@
 * difftool
 * merge
 * mergetool
+
+# Attendees
+
+Who took this course:
+
+* Vladimir Kloz
