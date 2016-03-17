@@ -28,3 +28,5 @@
   * This folder contain **.git** subfolder with _GIT_ internal data.
     * Here is a distributed copy of whole directory.
   * This also serves as a local working copy where you edit source code.
+* See the _PowerShell_ command line (contains branch name and perhaps
+  additional details about repository status).
