@@ -12,8 +12,10 @@
 ## Commands
 
 * Start _Git Shell_.
-* Create a local folder where your repository will reside
+* Create a local folder where your repository will reside:
   * ```mkdir d:\code\GitTraining1```
+* Switch to created folder:
+  * ```cd d:\code\GitTraining1```
 * Initialize _GIT_ repository:
   * ```git init ```
 
