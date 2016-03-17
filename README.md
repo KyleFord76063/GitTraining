@@ -11,3 +11,18 @@
     _PowerShell_.
     * If you will be using another alternative just adjust relevant
       commands.
+
+# Covered commands
+
+* init
+* status
+* add
+* commit
+
+# to be covered
+
+* rm
+* diff
+* difftool
+* merge
+* mergetool
