@@ -21,11 +21,40 @@
 
 # to be covered
 
+## Vlada
 * rm
+
+## Tomas
+
+* branch
+* checkout
+
+*	log – 20 min
+*	blame – 20 min
+
+## Pavel
+*	clone – 5 min
+* remote
+*	fetch – 6.5 min
+*	pull – 13 min
+*	push – 7 min
+
+
 * diff
 * difftool
 * merge
 * mergetool
+* pull requests
+
+*	rebase
+  *	Squash – 7 min
+  *	Reorder – 5.5 min
+  *	Update comment – 3 min
+  *	skip commit – 3 min
+  *	...
+*	cherry-pick – 14 min
+*	merge – 15 min
+* git tfs
 
 # Attendees
 
