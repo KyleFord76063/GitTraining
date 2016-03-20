@@ -3,37 +3,39 @@ git-branch
 
 * List, create or delete branches
 
-Let's list branches we have:
+We are continuing on repository from part 04, so let's list branches
+we have:
 
-    git branch [--list]
+	git branch [--list]
 
 Great, we've got this:
 
-    * master
+	* master
 
 We can see one branch called `master` with asterisk marking currently
 active branch. Create new branch
 
-    git branch new_brach
+	git branch my_aple_app
 
 again, let's check (with `git branch`) what branches we currently have
 
-    * master
-	  new_brach
+	* master
+	  my_aple_app
 
 oh, we made a mistake in spelling! But don't worry, we can fix that with
 
-	git branch -m new_brach new_branch
+	git branch -m my_aple_app my_apple_app
 
 we just renamed the branch to fix it
 
 	* master
-	  new_branch
+	  my_apple_app
 
-And you know what? We don't need the new branch, since we don't know how
+And you know what? Let's not do OS X version of our application, since we don't know how
 to switch into it (yet!) anyway, so let's delete it
 
-    git branch -d new_branch
+	$ git branch -d my_apple_app
+	Deleted branch my_apple_app (was 1126614).
 
 So, to sum up what we've just learned
 
