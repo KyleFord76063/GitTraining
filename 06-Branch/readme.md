@@ -6,25 +6,23 @@ git-branch
 We are continuing on repository from part 04, so let's list branches
 we have:
 
-	git branch [--list]
-
-Great, we've got this:
-
+	$ git branch [--list]
 	* master
 
 We can see one branch called `master` with asterisk marking currently
 active branch. Create new branch
 
-	git branch my_aple_app
+	$ git branch my_aple_app
 
 again, let's check (with `git branch`) what branches we currently have
 
+	$ git branch
 	* master
 	  my_aple_app
 
 oh, we made a mistake in spelling! But don't worry, we can fix that with
 
-	git branch -m my_aple_app my_apple_app
+	$ git branch -m my_aple_app my_apple_app
 
 we just renamed the branch to fix it
 
