@@ -44,7 +44,7 @@ Notice that `MyAppleApp` folder is not in the working tree any longer
 > branches. You can either commit them or stash them (more on this later)
 
 Now it's time to take a look at second usage for `git-checkout`. Restoring
-files in working tree. Let's see how `MyConsoleApp/console.txt' looks
+files in working tree. Let's see how `MyConsoleApp/console.txt` looks
 
 	$ cat MyConsoleApp/console.txt 
 	Added during git workshop
@@ -68,8 +68,8 @@ Now let's throw away those changes because we don't need them.
 	On branch master
 	nothing to commit, working directory clean
 
-Important to notice here is that there is no warning before overwriting the changes.
-And in general there is no way to get them back after doing checkout. So be careful.
+> Important to notice here is that there is no warning before overwriting the changes.
+> And in general there is no way to get them back after doing checkout. So be careful.
 
 You can do similar thing for deleted files
 
