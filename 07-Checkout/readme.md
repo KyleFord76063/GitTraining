@@ -33,7 +33,7 @@ to do something else
 Notice that `MyAppleApp` folder is not in the working tree any longer
 (because it was commited into another branch):
 
-	$ ls -l
+	$ ls -l .
 	total 4
 	drwxr-xr-x 2 paladin paladin 60 Mar 20 14:58 MyConsoleApp
 	drwxr-xr-x 2 paladin paladin 80 Mar 20 14:58 MyWindowsApp
