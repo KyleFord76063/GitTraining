@@ -19,18 +19,15 @@
 * add
 * commit
 
+* branch
+* checkout
+* log
+* blame
+
 # to be covered
 
 ## Vlada
 * rm
-
-## Tomas
-
-* branch
-* checkout
-
-*	log – 20 min
-*	blame – 20 min
 
 ## Pavel
 *	clone – 5 min
