@@ -56,11 +56,11 @@ Now we can get to actually determining the blame.
 
 What we can see here?
 
-1) in what commit the change was made
-2) who made it
-3) when
-4) line number
-5) line content
+1. in what commit the change was made
+2. who made it
+3. when
+4. line number
+5. line content
 
 This seems useful, right? But wait, we can do more! We all know that it shouldn't be done but it's still is. Copy&paste programming is sad reality and can really complicate finding out who originaly wrote what line and where. But git to the rescue! First let's run blame on `MyWindowsApp/dll.txt` to see the result:
 
