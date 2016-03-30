@@ -10,48 +10,57 @@ Now, let me just start this with a quick remark that very few of you will likely
 It's simplest form `git log` we already know, so let's try something more compact
 
 	$ git log --oneline
-	81b21df My first lab commit 2
-	12893d6 My first lab commit 1
-	4930d89 First commit and comment for it
+	6cfa070 Removal of console application
+	c72c6d6 My first lab commit 2
+	b76b4f2 My first lab commit 1
+	0f412a0 First commit and comment for it
 
 we can see history of current branch. Now, you can provide branch
 
 	$ git log --oneline my_apple_app
-	323c19e OS X version
-	81b21df My first lab commit 2
-	12893d6 My first lab commit 1
-	4930d89 First commit and comment for it
+	5a1710a OS X version
+	6cfa070 Removal of console application
+	c72c6d6 My first lab commit 2
+	b76b4f2 My first lab commit 1
+	0f412a0 First commit and comment for it
 
 specific file(s)
 
-	$ git log --oneline MyConsoleApp/console.txt
-	81b21df My first lab commit 2
-	12893d6 My first lab commit 1
+	$ git log --oneline MyWindowsApp/code.txt
+	c72c6d6 My first lab commit 2
+	b76b4f2 My first lab commit 1
 
 or even directory
 
-	$ git log --oneline MyConsoleApp
-	81b21df My first lab commit 2
-	12893d6 My first lab commit 1
+	$ git log --oneline MyWindowsApp
+	c72c6d6 My first lab commit 2
+	b76b4f2 My first lab commit 1
 
 But this is all just iterations of the same, so let's try something more interesting.
 
 	$ git mv MyWindowsApp/code.txt MyWindowsApp/dll.txt
 	$ git commit -m "moved code into dll"
-	[master 5afd97a] moved code into dll
+	[master eeab96e] moved code into dll
 	 1 file changed, 0 insertions(+), 0 deletions(-)
 	 rename MyWindowsApp/{code.txt => dll.txt} (100%)
 	$ git log --follow --oneline MyWindowsApp/dll.txt
-	5afd97a moved code into dll
-	81b21df My first lab commit 2
-	12893d6 My first lab commit 1
+	eeab96e moved code into dll
+	c72c6d6 My first lab commit 2
+	b76b4f2 My first lab commit 1
 
-We can see that the file was tracked even across renames! We can even add `-p` flag and let git list diff for complete history of the file across renames.
+We can see that the file was tracked even across renames! Using `--follow` we can even list history of deleted files:
+
+	$ git log --follow --oneline -- MyConsoleApp/console.txt
+	6cfa070 Removal of console application
+	c72c6d6 My first lab commit 2
+	b76b4f2 My first lab commit 1
+
+We can also add `-p` flag and let git list diff for complete history of the file across renames.
 
 	$ git log --follow -p MyWindowsApp/dll.txt
-	commit 5afd97a08c72c88e7dbf36b77ac58fc667f22957
+	commit eeab96ec34708b47a7567cf78059b25b4edb45a6
 	Author: Wolf <wolf@wolfsden.cz>
-	Date:   Tue Mar 29 17:14:43 2016 +0200
+	Date:   Wed Mar 30 16:21:43 2016 +0200
 
 		moved code into dll
 
@@ -60,9 +69,9 @@ We can see that the file was tracked even across renames! We can even add `-p` f
 	rename from MyWindowsApp/code.txt
 	rename to MyWindowsApp/dll.txt
 
-	commit 81b21df59ecbeea7d84b5b64a46e2e6fd9d76467
+	commit c72c6d6f4ea5ac79185fc6767426adcf5e1a3700
 	Author: Wolf <wolf@wolfsden.cz>
-	Date:   Tue Mar 29 14:27:21 2016 +0200
+	Date:   Wed Mar 30 16:03:31 2016 +0200
 
 		My first lab commit 2
 
@@ -73,9 +82,9 @@ We can see that the file was tracked even across renames! We can even add `-p` f
 	@@ -0,0 +1 @@
 	+Added during git workshop
 
-	commit 12893d6b26503372a03df3d257f4bd28aa235fba
+	commit b76b4f226b94066ece47233222a9755e3902c999
 	Author: Wolf <wolf@wolfsden.cz>
-	Date:   Tue Mar 29 14:26:30 2016 +0200
+	Date:   Wed Mar 30 16:02:47 2016 +0200
 
 		My first lab commit 1
 
