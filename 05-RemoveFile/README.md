@@ -6,9 +6,11 @@
 * First you remove the file in the staging area.
 * Next you have to commit your changes.
 * Directories are not tracked by _GIT_.
-  * Once a directory becomes empty it will be discarded.
-  * This can be a difference compared to TFS. If you would keep a folder
-    for some reason create a ```.gitattribute``` file inside.
+  * Once a directory becomes empty it will not even appear in your sandbox.
+  * This can be a difference (for example compared to TFS). If you would keep
+    a folder for some reason create a file inside. Commonly used files are
+    ```.gitattribute``` (this has special meaning), ```.gitkeep```,
+    ```.placeholder``` or ```.gitignore``` (this has special meaning).
 
 ## Commands
 
