@@ -3,6 +3,8 @@ git-blame
 
 * Show what revision and author last modified each line of a file
 
+> Basically TFS's annotate
+
 This is one of the more useful commands in git arsenal. It gives you information on who, when and in what revision did last modification to that specific line. If follows whole-file renames and can even track lines moved/copied from other files (you know, for those situations when you have one file copied into 4 with just minor modifications).
 
 > Since it annotates lines in file, it tells you nothing about lines that were deleted or completely replaced. Read up on `git-log`'s `-S` option for that.
@@ -62,7 +64,7 @@ What we can see here?
 4. line number
 5. line content
 
-This seems useful, right? But wait, we can do more! We all know that it shouldn't be done but it's still is. Copy&paste programming is sad reality and can really complicate finding out who originaly wrote what line and where. But git to the rescue! First let's run blame on `MyWindowsApp/dll.txt` to see the result:
+This seems useful, right? But wait, we can do more! We all know that it shouldn't be done but it still is. Copy&paste programming is sad reality and can really complicate finding out who originaly wrote what line and where. But git to the rescue! First let's run blame on `MyWindowsApp/dll.txt` to see the result:
 
 	$ git blame MyWindowsApp/dll.txt
 	e2385cf8 (Wolf 2016-03-31 01:34:40 +0200 1) // Added during git workshop
