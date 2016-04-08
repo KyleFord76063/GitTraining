@@ -35,7 +35,7 @@ Everyone has complete history
 	* if someone already cloned/pulled from you, all you can do is change it
 	* committing new version without the password won't help you, because everyone has complete history, each and every commit, in the local repository
 * other cause where you have to remember this is if you commit some huge file (`.pdb` or something) and later down the line you notice  that your repository is huge
-	* deleting the file and committing the deletion won't help
+	* deleting the file and committing the deletion won't help (unless you rewrite history and remove the file completely from all commits, see below)
 	* the file is part of the repository forever
 * **history can be rewritten**, but you will break every repository that cloned from you and they will have to re-clone, losing every local branch
 	* in other words, **don't ever rewrite history unless you know what you are doing**
