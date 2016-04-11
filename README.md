@@ -6,7 +6,7 @@
   * This is necessary for later tasks related to parallel development.
 * Install favorite _GIT_ command line tool.
   * You can use GitHub for Windows which comes with the PowerShell integration.
-	* Git for Windows (former mSysGit) can be used from cygwin, that how I do it
+	* Git for Windows (former mSysGit) can be used from cygwin, that's how I do it
 	* other people use it from PowerShell
 	* commands should be the same
   * [https://desktop.github.com/](https://desktop.github.com/)
