@@ -31,7 +31,7 @@ to do something else
 	  my_apple_app
 
 Notice that `MyAppleApp` folder is not in the working tree any longer
-(because it was commited into another branch):
+(because it was committed into another branch):
 
 	$ ls -l .
 	total 4

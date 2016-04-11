@@ -64,7 +64,7 @@ What we can see here?
 4. line number
 5. line content
 
-This seems useful, right? But wait, we can do more! We all know that it shouldn't be done but it still is. Copy&paste programming is sad reality and can really complicate finding out who originaly wrote what line and where. But git to the rescue! First let's run blame on `MyWindowsApp/dll.txt` to see the result:
+This seems useful, right? But wait, we can do more! We all know that it shouldn't be done but it still is. Copy&paste programming is sad reality and can really complicate finding out who originally wrote what line and where. But git to the rescue! First let's run blame on `MyWindowsApp/dll.txt` to see the result:
 
 	$ git blame MyWindowsApp/dll.txt
 	e2385cf8 (Wolf 2016-03-31 01:34:40 +0200 1) // Added during git workshop
@@ -99,7 +99,7 @@ Ha! See the difference? Now we know that first 6 lines are copy&paste from `MyWi
 git-gui blame
 -------------
 
-This text is on command line git usage, so this will not be described, but seriously, take some time to play with `git gui blame`. Lot of really cool features, my go-to tool for code archeology.
+This text is on command line git usage, so this will not be described, but seriously, take some time to play with `git gui blame`. Lot of really cool features, my go-to tool for code archaeology.
 
 More informations
 -----------------

@@ -67,7 +67,7 @@ Now what if we are interested in what happened to file(s) in what commits, but n
 	b76b4f2 My first lab commit 1
 	A       MyWindowsApp/code.txt
 
-> You can ommit file name, use branch name, multiple files, the usual.
+> You can omit file name, use branch name, multiple files, the usual.
 
 We can also add `-p` flag and let git list diff for complete history of the file across renames.
 
