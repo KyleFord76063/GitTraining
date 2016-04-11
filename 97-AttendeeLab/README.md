@@ -5,7 +5,7 @@
 
 # Task
 
-* Fork GitHub repository [https://github.com/voloda/GitTraining](https://github.com/voloda/GitTraining).
+* Fork GitHub repository [https://github.com/DevTrainings/GitTraining.git](https://github.com/DevTrainings/GitTraining.git).
 * Clone it as your local working copy.
 * Find it's top level **README.md** file.
 * Add your name or nickname into attendees section.
