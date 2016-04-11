@@ -83,15 +83,16 @@ Alternatively, if you want to use something smaller and (imho) better, you can g
 
 #### Git for Windows
 
-    $ git config --global mergetool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
+	$ git config --global mergetool.kdiff3.path "C:/Program Files/KDiff3/kdiff3.exe"
 	$ git config --global merge.tool=kdiff3
 
 #### Cygwin
 
 This is little harder. It assumes you have `cyg-wrapper.sh` script in `~/bin`.
 
-	$ git config --global mergetool.kdiff3.cmd '~/bin/cyg-wrapper.sh "/cygdrive/c/Program Files/KDiff3/kdiff3.exe" "$LOCAL" "$REMOTE" --output "$MERGED" --base "$BASE"
-	$ git config --global merge.tool=kdiff3
+	$ git config --global mergetool.kdiff3.path
+	$ git config --global mergetool.kdiff3.cmd '~/bin/cyg-wrapper.sh "/cygdrive/c/Program Files/KDiff3/kdiff3.exe" "$LOCAL" "$REMOTE" --output "$MERGED" --base "$BASE"'
+	$ git config --global merge.tool kdiff3
 
 ## Diff tool
 
@@ -129,8 +130,9 @@ git config --global --edit
 
 Assuming you have `cyg-wrapper.sh` script in `~/bin`.
 
-	$ git config --global difftool.kdiff3.cmd '~/bin/cyg-wrapper.sh "/cygdrive/c/Program Files/KDiff3/kdiff3.exe" "$LOCAL" "$REMOTE"
-	$ git config --global diff.tool=kdiff3
+	$ git config --global difftool.kdiff3.path
+	$ git config --global difftool.kdiff3.cmd '~/bin/cyg-wrapper.sh "/cygdrive/c/Program Files/KDiff3/kdiff3.exe" "$LOCAL" "$REMOTE"'
+	$ git config --global diff.tool kdiff3
 
 ## Default text editor
 
