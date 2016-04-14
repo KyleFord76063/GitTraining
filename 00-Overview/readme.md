@@ -39,3 +39,19 @@ Everyone has complete history
 	* the file is part of the repository forever
 * **history can be rewritten**, but you will break every repository that cloned from you and they will have to re-clone, losing every local branch
 	* in other words, **don't ever rewrite history unless you know what you are doing**
+
+Commit & history integrity
+--------------------------
+
+* in git you don't have revision numbers (as in TFS or SVN), instead git uses SHA-1 hashes to mark commits
+* each file in your repository is represented by it's SHA-1 checksum
+* part of chechsummed git commit is checksum of previous commits, so it forms cryptographically secure line from root commit to current state
+	* this means that if you have repository at the same commit as someone else and no local changes, you can be (pretty) sure you have the exact same files
+
+What is branch in git
+---------------------
+
+* branch is really just a pointer to a commit
+* difference between branch and tag is that the branch is updated to new commit when you commit into it
+* so each branch isn't separate directory like in SVN/TFS
+* you can have only one branch checked-out at the momment
