@@ -10,7 +10,11 @@ We will start with warning from documentation:
 Let's all start with cloning testing repository to check merge on:
 
 	$ git clone git@github.com:DevTrainings/test_merge_conflict.git
-	$ git checkout bar && git checkout cherry-pick && git checkout foo && git checkout master
+	$ cd test_merge_conflict
+	$ git checkout bar
+	$ git checkout cherry-pick
+	$ git checkout foo
+	$ git checkout master
 
 This repository looks like this (run it yourself to have it in colors ;) ):
 
@@ -143,6 +147,8 @@ We now have merge both `bar` and `foo` into the master, in the process we resolv
 
 Mergetool way
 -------------
+
+> Now is probably a good time to check if you have GUI tools configured. `99-GitConfiguration` will help you with that.
 
 We throw away the last commit (the merge of `foo`), so we can do it again, this time using merge tool.
 
