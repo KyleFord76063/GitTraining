@@ -6,7 +6,7 @@ There is wide array of possible git workflows you and your team can follow.
 Centralized Workflow
 --------------------
 
-![Centralized Workflow](https://raw.githubusercontent.com/DevTrainings/GitTraining/f_18/15-GitFlows/centralized.svg)
+![Centralized Workflow](https://cdn.rawgit.com/DevTrainings/GitTraining/f_18/15-GitFlows/centralized.svg)
 
 This way git is used in the same (or very similar) way as centralized version control system. You have one repository which serves as central point holding all the changes.
 
