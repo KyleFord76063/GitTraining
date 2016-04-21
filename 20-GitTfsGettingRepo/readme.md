@@ -46,6 +46,15 @@ after that, you need to initialize git tfs using
 
 This will quickly configure clone git repository for use with the original TFS repo.
 
+Updating
+--------
+
+In case you have (the recommended) auto synchronazing TFS---Git repository, you can just use `git pull`. Otherwise you can use
+
+	$ git tfs pull [-r]
+
+Fetches TFS changesets and merges (or rebase with `-r`) then on current branch.
+
 What next?
 ----------
 
