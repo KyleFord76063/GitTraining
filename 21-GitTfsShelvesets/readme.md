@@ -30,3 +30,8 @@ Shelve
 	$ git tfs shelve shelveset_name
 
 This command creates a shelveset with changes on current branch since last commit with is already in TFS.
+
+More information
+----------------
+
+If you really need to use `git-tfs` more then you just learned, you should check documentation at [their github](https://github.com/git-tfs/git-tfs).
