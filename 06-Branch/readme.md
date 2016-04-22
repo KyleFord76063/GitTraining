@@ -14,23 +14,22 @@ active branch. Create new branch
 
 	$ git branch my_aple_app
 
-again, let's check (with `git branch`) what branches we currently have
+Again, let's check (with `git branch`) what branches we currently have
 
 	$ git branch
 	* master
 	  my_aple_app
 
-oh, we made a mistake in spelling! But don't worry, we can fix that with
+Oh, we made a mistake in spelling! But don't worry, we can fix that with
 
 	$ git branch -m my_aple_app my_apple_app
 
-we just renamed the branch to fix it
+We just renamed the branch to fix it
 
 	* master
 	  my_apple_app
 
-And you know what? Let's not do OS X version of our application, since we don't know how
-to switch into it (yet!) anyway, so let's delete it
+And you know what? Let's not do OS X version of our application, since we don't know how to switch into it (yet!) anyway, so let's delete it
 
 	$ git branch -d my_apple_app
 	Deleted branch my_apple_app (was 1126614).
@@ -46,9 +45,8 @@ So, to sum up what we've just learned
 * git branch -d $BRANCH_NAME
 	* delete branch
 
-More informations
------------------
+More information
+----------------
 
 I recommend checking [git-branch documentation](https://git-scm.com/docs/git-branch) for more details,
-you can use `git-branch` to manage/list remote branches as well, set upstream for branch, create new
-branch from specific commit and more. All of that is out of scope of this tutorial.
+you can use `git-branch` to manage/list remote branches as well, set upstream for branch, create new branch from specific commit and more. All of that is out of scope of this tutorial.

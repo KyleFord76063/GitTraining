@@ -1,10 +1,9 @@
-# GIT introduction
+# GIT Introduction
 
 ## Overview
 
-* We will start with GIT command line interface to give you understanding
-  of _GIT_.
-* We will do brief overview of visual tools later.
+* We will start with the GIT command line interface to give you understanding of _GIT_.
+* We will do a brief overview of visual tools later.
 
 ## GIT Vision
 

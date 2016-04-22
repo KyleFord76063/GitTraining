@@ -21,7 +21,7 @@
 
 ## Comments
 
-**Congratulation** - you have your first _GIT_ repository.
+**Congratulations** - you have your first _GIT_ repository.
 
 * Above commands initialized **GitTraining1** repository in the local path
   **d:\code\GitTraining1**.

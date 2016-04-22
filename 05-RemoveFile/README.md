@@ -1,14 +1,13 @@
-# Removing a file from repository
+# Removing a file from a repository
 
 ## Introduction
 
-* Removing a file from repository is done in two steps.
+* Removing a file from a repository is done in two steps.
 * First you remove the file in the staging area.
 * Next you have to commit your changes.
 * Directories are not tracked by _GIT_.
-  * Once a directory becomes empty it will not even appear in your sandbox.
-  * This can be a difference (for example compared to TFS). If you would keep
-    a folder for some reason create a file inside. Commonly used files are
+  * Once a directory becomes empty it will not appear in your sandbox.
+  * This is different from some other source control systems (TFS for example). If you want to keep a folder for some reason, then create a file inside it. Commonly used files are
     ```.gitattribute``` (this has special meaning), ```.gitkeep```,
     ```.placeholder``` or ```.gitignore``` (this has special meaning).
 

@@ -1,9 +1,9 @@
-# Adding first file to repository
+# Adding the first file to the repository
 
 ## Introduction
 
 * Your local repository folder is also your working folder (sandbox).
-* You have there local working copy of source code.
+* You have a local working copy of source code.
 * You always have a single working branch active.
 
 ## Commands
@@ -29,8 +29,7 @@
 
 * Staging area:
   * Prepares changes for commit.
-  * If the file is modified after being added to the staging area you have
-    to add it again.
+  * If the file is modified after being added to the staging area you have to add it again.
 * Commit
   * ```git commit``` checks the changes from staging area into the local
     repository.

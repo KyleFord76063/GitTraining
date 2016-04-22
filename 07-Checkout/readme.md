@@ -5,11 +5,10 @@ git-checkout
 
 Let's create OS X version after all. This time we'll use `git-checkout`
 with `-b` switch, which creates new branch if it doesn't exist already
-and switches into it
-
+and checkout the new branch
 	git checkout -b my_apple_app
 
-with knowledge from last part we can check if it worked
+With knowledge from last part we can check if it worked
 
 	$ git branch
 	  master
@@ -43,8 +42,7 @@ Notice that `MyAppleApp` folder is not in the working tree any longer
 > the current branch and the target branch, `git-checkout` will refuse to switch
 > branches. You can either commit them or stash them (more on this later)
 
-Now it's time to take a look at second usage for `git-checkout`. Restoring
-files in working tree. Let's see how `MyConsoleApp/console.txt` looks
+Now it's time to take a look at second usage for `git-checkout`. Restoring files in working tree. Let's see how `MyConsoleApp/console.txt` looks
 
 	$ cat MyConsoleApp/console.txt 
 	Added during git workshop
@@ -88,8 +86,8 @@ You can do similar thing for deleted files
 	On branch master
 	nothing to commit, working directory clean
 
-More informations
------------------
+More information
+----------------
 
 I recommend checking [git-checkout documentation](https://git-scm.com/docs/git-checkout) for more details,
 you can try to merge when there is a conflict, checkout exact commit (which detaches a HEAD) and more.

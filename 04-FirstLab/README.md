@@ -7,7 +7,7 @@
 # Task
 
 * Create in your repository following folders and files.
-* To files put some content per your preference:
+* For these files put some content in them per your preference:
   * MyConsoleApp
     * console.txt
   * MyWindowsApp
@@ -49,5 +49,5 @@ Date:   Thu Mar 17 12:56:25 2016 +0100
 
 # Comments
 
-* When adding content of folder you do not have to add individual files.
+* When adding contents of a folder you do not have to add individual files.
 * Folders are not individual part of repository.

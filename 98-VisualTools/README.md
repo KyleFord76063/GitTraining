@@ -1,9 +1,9 @@
 # GIT Visual Tools
 
-## GitHub
+## GitHub (free)
 
-## SourceTree
+## SourceTree (free)
 
-## TortoiseGIT
+## TortoiseGIT (free)
 
 ## Visual Studio 2013+

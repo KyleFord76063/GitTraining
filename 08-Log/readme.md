@@ -7,7 +7,7 @@ You can use `git log` for inspecting history of a repository, individual files o
 
 Now, let me just start this with a quick remark that very few of you will likely use `git-log` on a daily basis. But still, it's good to know how to use it.
 
-It's simplest form `git log` we already know, so let's try something more compact
+The simplest form `git log` we already know, so let's try something more compact
 
 	$ git log --oneline
 	6cfa070 Removal of console application
@@ -15,7 +15,7 @@ It's simplest form `git log` we already know, so let's try something more compac
 	b76b4f2 My first lab commit 1
 	0f412a0 First commit and comment for it
 
-we can see history of current branch. Now, you can provide branch
+We can see history of current branch. Now, you can provide a branch
 
 	$ git log --oneline my_apple_app
 	5a1710a OS X version
@@ -24,13 +24,13 @@ we can see history of current branch. Now, you can provide branch
 	b76b4f2 My first lab commit 1
 	0f412a0 First commit and comment for it
 
-specific file(s)
+Specific file(s)
 
 	$ git log --oneline MyWindowsApp/code.txt
 	c72c6d6 My first lab commit 2
 	b76b4f2 My first lab commit 1
 
-or even directory
+Or even a directory (folder)
 
 	$ git log --oneline MyWindowsApp
 	c72c6d6 My first lab commit 2
@@ -67,7 +67,7 @@ Now what if we are interested in what happened to file(s) in what commits, but n
 	b76b4f2 My first lab commit 1
 	A       MyWindowsApp/code.txt
 
-> You can omit file name, use branch name, multiple files, the usual.
+> You can omit the file name, use the branch name, multiple files, the usual.
 
 We can also add `-p` flag and let git list diff for complete history of the file across renames.
 
@@ -108,7 +108,7 @@ We can also add `-p` flag and let git list diff for complete history of the file
 
 > I'm not using `--oneline` here, since without colors it gets kinda dense.
 
-More informations
------------------
+More information
+----------------
 
 I recommend checking [git-log documentation](https://git-scm.com/docs/git-log) for more details, there is a **lot** of options for `git log`.
